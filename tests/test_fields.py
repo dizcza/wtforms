@@ -678,6 +678,17 @@ class TestRadioField:
             "</ul>"
         )
 
+    def test_render_kw_preserved(self):
+        F = make_form(
+            a=RadioField(
+                choices=[(True, "yes"), (False, "no")],
+                render_rw=dict(disabled=True)
+            )
+        )
+        form = F()
+        assert 'disabled' in form.a()
+
+
 
 class TestStringField:
     class F(Form):

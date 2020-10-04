@@ -685,7 +685,13 @@ class TestRadioField:
             )
         )
         form = F()
-        assert "disabled" in form.a()
+        assert form.a() == (
+            '<ul disabled id="a">'
+            '<li><input disabled id="a-0" name="a" type="radio" value="True"> '
+            '<label for="a-0">yes</label></li><li>'
+            '<input disabled id="a-1" name="a" type="radio" value="False"> '
+            '<label for="a-1">no</label></li></ul>'
+        )
 
 
 class TestStringField:

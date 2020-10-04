@@ -682,7 +682,7 @@ class TestRadioField:
         F = make_form(
             a=RadioField(
                 choices=[(True, "yes"), (False, "no")],
-                render_rw=dict(disabled=True)
+                render_kw=dict(disabled=True)
             )
         )
         form = F()

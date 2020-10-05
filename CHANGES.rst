@@ -39,6 +39,27 @@ Unreleased
 -   Fixed a bug when the :class:`~wtforms.fields.core.SelectField` choices
     are list of strings. :pr:`598`
 -   Error messages standardization. :issue:`613` :pr:`620` :pr:`626` :pr:`627`
+-   :class:`~wtforms.fields.core.SelectMultipleField` `validate_choice`
+    bugfix. :issue:`606` :pr:`642`
+
+
+Version 2.3.3
+-------------
+
+Released 2020-07-30
+
+-   This release includes the translation files that were missing in the
+    2.3.2 release. :issue:`641`
+
+
+Version 2.3.2
+-------------
+
+Released 2020-07-29
+
+-   Fixed a bug with :class:`~fields.SelectField` choices shortcut at
+    form submission. :pr:`598, 639`
+
 
 Version 2.3.1
 -------------
